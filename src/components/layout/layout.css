@@ -1,0 +1,19 @@
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+
+  li {
+    cursor: pointer;
+    color: #cbd5e1;
+
+    &:hover {
+      color: #3b82f6;
+      
+    }
+    &.active {
+      border-bottom:solid 1px #3b82f6;
+      padding-bottom: 5px;
+      color: #3b82f6;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import "../app/vazir.css";
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,13 +14,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+ --background: #f8fafc;
+  --foreground: #0f172a;
 
+  --hero-gradient: radial-gradient(
+    circle at 67%,
+    #dbeafe 0%,
+    #f8fafc 45%,
+    #ffffff 80%
+  );
+}
+}
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+
+  --hero-gradient: radial-gradient(
+    circle at 67%,
+    #05122d 0%,
+    #0f172a 45%,
+    #020617 80%
+  );
+}
 body {
-  background: var(--background);
+  background: var(--hero-gradient);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "vazir";
+  min-height: 100vh;
 }

@@ -1,9 +1,10 @@
+import Container from "../components/layout/Container";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-red-600">reza</h1>
+      <Container />
     </div>
   );
 }
