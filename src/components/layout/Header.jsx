@@ -1,5 +1,6 @@
 "use client";
 import logo from "../../../public/images/logo.png";
+import Button from "../ui/Button";
 import "../layout/layout.css"
 
 export default function Header({ activePage, setActivePage }) {
@@ -25,14 +26,6 @@ export default function Header({ activePage, setActivePage }) {
           >
             About
           </li>
-
-          <li
-            className={activePage === "skills" ? "active" : ""}
-            onClick={() => setActivePage("skills")}
-          >
-            Skills
-          </li>
-
           <li
             className={activePage === "projects" ? "active" : ""}
             onClick={() => setActivePage("projects")}
@@ -49,9 +42,9 @@ export default function Header({ activePage, setActivePage }) {
         </ul>
 
         <div className="flex items-center gap-6">
-          <button className="flex  py-[5px] px-[18px] text-[#047ff5] rounded-lg border border-[#0761bb]">
-            <a href="">Git hub me</a>
-          </button>
+          <Button variant="header" href="https://github.com/rezasoleymanii">
+            Git hub me
+          </Button>
 
           <i className="bi bi-moon-fill"></i>
         </div>
