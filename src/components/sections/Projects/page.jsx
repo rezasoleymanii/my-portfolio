@@ -1,5 +1,4 @@
 import SectionTemplate from "../../ui/SectionTemplate";
-import SkillBar from "../../ui/SkillBar";
 import IconsTechnologies from "../../../../public/icons/Technologies"
 import PageAddress from "../../../../public/icons/PageAddress"
 import Button from "../../ui/Button"
@@ -12,6 +11,7 @@ export default function Projects({setActivePage}){
         titleClass="text-[70px]"
         title="My"
         highlight="Works"
+        imageClass="w-[400px]"
         subtitle={
             <>
                 The things I've done so far, <br/>
@@ -32,6 +32,13 @@ export default function Projects({setActivePage}){
         >
         <div className="flex gap-2 pt-5">
             <Button
+                variant="primary"
+                onClick={() => setActivePage("contact")}
+                icon={<i className="bi bi-arrow-right ml-2"></i>}
+                >
+                View Contact
+            </Button>
+            <Button
                 variant="outline"
                 href="/cv.pdf"
                 icon={<i className="bi bi-download ml-2"></i>}
@@ -40,17 +47,6 @@ export default function Projects({setActivePage}){
             </Button>
         </div>
 
-        <div className="pt-6">
-            <span className="text-[#727f8b]">
-                TECHNOLOGIES
-            </span>
-            <IconsTechnologies />
-            <div className="flex items-center gap-6">
-                <PageAddress type="github" href="https://github.com/rezasoleymanii"/>
-                <PageAddress type="Phone" onClick={() => setActivePage("contact")}/>
-                <PageAddress type="instagram" onClick={() => setActivePage("contact")}/>
-            </div>
-        </div>
     </SectionTemplate>
   );
 }

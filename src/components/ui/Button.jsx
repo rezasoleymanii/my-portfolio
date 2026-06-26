@@ -15,6 +15,8 @@ const styles = {
     outline:
     "py-[12px] px-[20px] rounded-lg border border-[#454f64]",
 
+    click:"text-center bg-[linear-gradient(to_left,#0241c1,#0965e5)] py-[12px] px-[20px] rounded-lg border border-[#454f64]",
+
     header:
     "py-[5px] px-[18px] text-[#047ff5] rounded-lg border border-[#0761bb]"
 }

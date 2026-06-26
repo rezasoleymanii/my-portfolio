@@ -13,6 +13,7 @@ export default function About({setActivePage}) {
       descriptionClass="text-[12px]"
       profileClass="absolute z-10 "
       centerClass="flex-row-reverse"
+      ProjectsClass="hidden"
       imageClass="flex order-first"
       subtitle={
         <>

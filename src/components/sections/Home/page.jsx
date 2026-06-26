@@ -8,15 +8,28 @@ export default function Home({ setActivePage }){
         <SectionTemplate
             badge="Frontend Developer"
             title="Hi, I'm"
-            titleClass="text-[70px]"
+            titleClass="
+            text-[38px]
+            w-fit
+            sm:text-[45px]
+            md:text-[55px]
+            lg:text-[70px]
+            "
             highlight="Reza"
+            ProjectsClass="hidden"
             subtitle={
                 <>
                 I build modern and responsive <br />
                 web applications.
                 </>
             }
-            subtitleClass="text-[30px]"
+            subtitleClass="
+            text-[18px]
+            w-fit
+            sm:text-[22px]
+            md:text-[25px]
+            lg:text-[30px]
+            "
             description={
                 <>
                 I'm a Frontend Developer focused on
@@ -26,9 +39,25 @@ export default function Home({ setActivePage }){
                 user-friendly websites.
                 </>
             }
+            descriptionClass="
+            text-[13px]
+            w-fit
+            sm:text-[15px]
+            md:text-[16px]
+            "
             image={bacbackground}
+            
+            centerClass="
+            flex-col-reverse
+            md:flex-col-reverse
+            lg:flex-row "
+            
+            profileClass="
+            items-center
+            lg:items-start
+            lg:text-left "
             >
-            <div className="flex gap-2 pt-5">
+            <div className="flex flex-col  gap-3 pt-5 w-fit justify-center lg:justify-start flex-row">
 
                 <Button
                 variant="primary"
@@ -48,13 +77,13 @@ export default function Home({ setActivePage }){
 
             </div>
 
-            <div className="pt-6">
+            <div className="pt-6 text-center w-fit lg:text-left">
                 <span className="text-[#727f8b]">
                 TECHNOLOGIES
                 </span>
 
-                <IconsTechnologies />
-                <div className="flex items-center gap-6">
+                <IconsTechnologies  />
+                <div className="flex justify-center lg:justify-start items-center gap-6 pt-4">
                     <PageAddress type="github" href="https://github.com/rezasoleymanii"/>
                     <PageAddress type="Phone" onClick={() => setActivePage("contact")}/>
                     <PageAddress type="instagram" onClick={() => setActivePage("contact")}/>
